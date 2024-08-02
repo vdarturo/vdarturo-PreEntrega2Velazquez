@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Style to navbar */
 header{
     display: flex;
     flex-flow: row wrap;
@@ -46,3 +47,41 @@ nav a{
     width: 120px;
 }
 
+/* Style to footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #202942;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+}
+
+footer section{
+    display: flex;
+    justify-content: space-between;
+    gap: 6.25rem;
+    color: #FFFFFF;
+}
+
+footer section article{
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    width: 30%;
+}
+
+footer section article div{
+    display: flex;
+    flex-direction: row;
+}
+
+footer section a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.icon-right-margin{
+    margin-right: .625rem;
+}
