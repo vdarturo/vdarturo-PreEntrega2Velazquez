@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+    box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 3.125rem;
+    list-style-type: none;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+.demo-button{
+    background-color: #0CD2FE;
+    color: #FFFFFF;
+    border-radius: 50rem;
+    line-height: 1.5;
+    border-style: none;
+    height:28px;
+    width: 120px;
+}
+
