@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Heebo", sans-serif;
 }
 
 /* Style to navbar */
@@ -33,6 +34,7 @@ nav a{
     text-decoration: none;
     color: #000000;
     font-size: 1.375rem;
+    font-family: "Heebo", sans-serif;
 }
 
 .demo-button{
@@ -93,14 +95,19 @@ main{
     align-items: center;
 }
 
-.section-mode-img-right{
+.grid-80-20{
     display: grid;
     grid-template-columns: 80% 20%;
 }
 
-.section-mode-img-left{
+.grid-20-80{
     display: grid;
     grid-template-columns: 20% 80%;
+}
+
+.grid-50-50{
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 main section{
@@ -117,11 +124,15 @@ main section article ul li{
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 h2{
-    font-size: 2rem;
+    font-size: 2.25rem;
+}
+
+h3{
+    font-size: 1.5rem;
 }
 
 p{
@@ -136,4 +147,55 @@ p{
 
 .text-center{
     text-align: center;
+}
+
+/* Payment plan cards style */
+
+.price-table{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-card{
+    background-color:#FFFFFF;
+    border-radius:10px;
+    box-shadow: 0px 2px 5px #858585;
+}
+
+.header-price-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#202942;
+    color: #FFFFFF;
+    height: 6.25rem;
+    padding:1px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+.content-price-card{
+    display: flex;
+    flex-direction: column;
+    margin: .9375rem;
+}
+
+.feature-content-price-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.25rem;
+    margin-bottom: .625rem;
+}
+
+.footer-content-price-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon-feature{
+    width: 16px;
+    height: 16px;
 }
