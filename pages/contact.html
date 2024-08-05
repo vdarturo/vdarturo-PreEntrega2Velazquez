@@ -21,7 +21,7 @@
                 <li><a href="./about_us.html">Nosotros</a></li>
             </ul>
         </nav>
-        <a href="#"><button class="demo-button">Solicita una demo</button></a>
+        <a href="#"><button class="button-style">Solicita una demo</button></a>
     </header>
     <main>
         <section class="grid-50-50">
@@ -44,22 +44,20 @@
                     </li>
                 </ul>
             </article>
-            <form>
+            <form class="form-contact">
                 <div>
                     <h3>Solicita tu demo gratis</h3>
                 </div>
+                <br>
                 <div>
-                    <span>
-                        <input type="text" placeholder="Nombre*" name="nombre">
-                        <input type="text" placeholder="Apellidos*" name="apellidos">
-                    </span>
-                    <input type="text" placeholder="Cargo*" name="cargo">
-                    <input type="text" placeholder="Empresa*" name="empresa">
-                    <input type="email" placeholder="Correo electrónico corporativo*" name="email">
-                    <input type="tel" placeholder="Teléfono*" name="telefono">
+                    <input type="text" placeholder="Nombre completo*" name="nombre" required>   
+                    <input type="text" placeholder="Cargo*" name="cargo" required>
+                    <input type="text" placeholder="Empresa*" name="empresa" required>
+                    <input type="email" placeholder="Correo electrónico corporativo*" name="email" required>
+                    <input type="tel" placeholder="Teléfono*" name="telefono" pattern="[0-9]{10}" required>
                 </div>
-                <div>
-                    <button type="submit">Enviar</button>
+                <div class="form-footer">
+                    <button type="submit" class="button-style">Enviar</button>
                 </div>
             </form>
         </section>
