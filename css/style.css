@@ -73,6 +73,11 @@ footer section a{
     margin-right: .625rem;
 }
 
+.landing-page-link{
+    color: orange;
+    text-decoration: orange underline;
+}
+
 /* Main */
 h1{
     font-size: 2.5rem;
