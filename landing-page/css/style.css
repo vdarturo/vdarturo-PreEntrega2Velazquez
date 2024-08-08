@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.card-header{
+    height: 4rem;
+}
+
+footer section article ul{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
