@@ -1,0 +1,26 @@
+main{
+    @include flex(column, center, center);
+    margin-top: 3.125rem;
+    section{
+        @include flex(row, space-around, center);
+        width: 80%;
+        margin-bottom: 1.875rem;
+        gap: 1.875rem;
+        img{
+            @include imageSize(13.75rem, 12.5rem);
+        }
+        article{
+            width: 50rem;
+            ul{
+                li{
+                    @include flex(row, left, baseline);
+                    gap: .3125rem;
+                    margin: .3125rem;
+                    img{
+                        @include imageSize(1rem, 1rem);
+                    }
+                }
+            };
+        }
+    }
+}

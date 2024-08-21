@@ -1,0 +1,27 @@
+@media screen and (max-width: 24.375rem) {
+    footer section{
+        @include flex(column, center, center);
+    }
+
+    footer section article{
+        margin-bottom: 1.875rem;
+    }
+
+    .price-table{
+        @include flex(column, center, center);
+    }
+
+    main section{
+        @include flex(column, center, center);
+    }
+
+    main section article{
+        width: 100%;
+    }
+
+    .form-contact{
+        width: 100%;
+        margin-left: 3.125rem;
+        margin-right: 3.125rem;
+    }
+}

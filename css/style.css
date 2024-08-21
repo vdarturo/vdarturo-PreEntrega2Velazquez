@@ -1,268 +1,231 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Heebo", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
 }
 
-/* Style to navbar */
-header{
-    background-color: #FFFFFF;
-    box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
+form {
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px #858585;
+  background-color: rgba(20, 154, 236, 0.9176470588);
+  padding: 1.25rem;
+  width: 25rem;
+}
+form input {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  width: 100%;
+  margin-bottom: 5px;
 }
 
-header img{
-    height: 3.125rem;
-    width: 12.5rem;
+.form-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.25rem;
 }
 
-.nav-link{
-    color: #000000;
-    font-size: 1.375rem;
-    font-family: "Heebo", sans-serif;
+.price-card {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px #858585;
+  margin-bottom: 1.875rem;
 }
 
-.button-style{
-    background-color: #0CD2FE;
-    color: #FFFFFF;
-    border-radius: 50rem;
-    line-height: 1.5;
-    border-style: none;
-    height:28px;
-    width: 120px;
+.header-price-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #202942;
+  color: #FFFFFF;
+  height: 6.25rem;
+  padding: 1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-/* Style to footer */
+.content-price-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 0.9375rem;
+}
+
+.feature-content-price-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 0.625rem;
+}
+
+.footer-content-price-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-icon {
+  height: 1rem;
+  width: 1rem;
+}
+
+.button-style {
+  background-color: #0CD2FE;
+  color: #FFFFFF;
+  border-radius: 50rem;
+  line-height: 1.5;
+  border-style: none;
+  height: 1.75rem;
+  width: 7.5rem;
+}
+
+header {
+  background-color: #FFFFFF;
+  box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
+}
+header nav a img {
+  height: 3.125rem;
+  width: 12.5rem;
+}
+header nav ul li {
+  color: #000000;
+  font-size: 1.375rem;
+  font-family: "Heebo", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.125rem;
+}
+main section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 1.875rem;
+  gap: 1.875rem;
+}
+main section img {
+  height: 13.75rem;
+  width: 12.5rem;
+}
+main section article {
+  width: 50rem;
+}
+main section article ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: baseline;
+  gap: 0.3125rem;
+  margin: 0.3125rem;
+}
+main section article ul li img {
+  height: 1rem;
+  width: 1rem;
+}
+
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #202942;
-    padding-top: 3.125rem;
-    padding-bottom: 3.125rem;
-    margin-top: 3.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #202942;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  margin-top: 3.125rem;
+}
+footer section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #FFFFFF;
+  width: 100%;
+}
+footer section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  width: 200px;
+}
+footer section article div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer section article aside img {
+  height: 2rem;
+  width: 2rem;
+}
+footer section a {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
-footer section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    color: #FFFFFF;
-    width: 100%;
+.icon, .email-icon, .phone-icon {
+  height: 1.25rem;
+  width: 1.25rem;
 }
 
-footer section article{
-    display: flex;
-    flex-direction: column;
-    gap: .625rem;
-    width: 200px;
+.email-icon {
+  width: 1.75rem;
 }
 
-footer section article div{
-    display: flex;
-    flex-direction: row;
+.icon-right-margin {
+  margin-right: 0.625rem;
 }
 
-footer section a{
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.icon-right-margin{
-    margin-right: .625rem;
-}
-
-.landing-page-link{
-    color: orange;
-    text-decoration: orange underline;
-}
-
-/* Main */
-h1{
-    font-size: 2.5rem;
-}
-
-h2{
-    font-size: 2.25rem;
-}
-
-h3{
-    font-size: 1.5rem;
-}
-
-p{
-    text-align: justify;
-    font-size: 1rem;
-}
-
-.format-img{
-    width: 200px;
-    height: 220px;
-}
-
-.text-center{
-    text-align: center;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3.125rem;
-}
-
-main section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 80%;
-    margin-bottom: 1.875rem;
-    gap: 1.875rem;
-}
-
-main section article{
-    width: 50rem;
-}
-
-main section article ul li{
-    display: flex;
-    flex-direction: row;
-    gap: .3125rem;
-    margin: .3125rem;
-}
-
-/* Payment plan cards style */
-
-.price-table{
-    display: flex;
-    justify-content: space-around;
-}
-
-.price-card{
-    background-color:#FFFFFF;
-    border-radius:10px;
-    box-shadow: 0px 2px 5px #858585;
-    margin-bottom: 1.875rem;
-}
-
-.header-price-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:#202942;
-    color: #FFFFFF;
-    height: 6.25rem;
-    padding:1px;
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
-}
-
-.content-price-card{
-    display: flex;
-    flex-direction: column;
-    margin: .9375rem;
-}
-
-.feature-content-price-card{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1.25rem;
-    margin-bottom: .625rem;
-}
-
-.footer-content-price-card{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.feature-icon{
-    width: 1rem;
-    height: 1rem;
-}
-
-.phone-icon{
-    width: 1.25rem;
-    height: 1.25rem;
-}
-
-.email-icon{
-    width: 1.75rem;
-    height: 1.25rem;
-}
-
-.social-media-icon{
-    width: 2rem;
-    height: 2rem;
-}
-
-/* Form style */
-.form-contact{
-    border-radius:10px;
-    box-shadow: 0px 2px 5px #858585;
-    background-color: #149aecea;
-    padding: 1.25rem;
-    width: 25rem;
-}
-
-.form-contact input{
-    border-radius:5px;
-    border-style: solid;
-    border-width: 1px;
-    width: 100%;
-    margin-bottom: 5px;
-}
-
-.form-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1.25rem;
-}
-
-/* Tablet*/
 @media screen and (max-width: 48rem) {
-    .price-card{
-        width: 13.75rem;
-    }
+  .price-card {
+    width: 13.75rem;
+  }
 }
-
-/* Mobile */
 @media screen and (max-width: 24.375rem) {
-    footer section{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    footer section article{
-        margin-bottom: 1.875rem;
-    }
-
-    .price-table{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    main section{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    main section article{
-        width: 100%;
-    }
-
-    .form-contact{
-        width: 100%;
-        margin-left: 3.125rem;
-        margin-right: 3.125rem;
-    }
+  footer section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer section article {
+    margin-bottom: 1.875rem;
+  }
+  .price-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main section article {
+    width: 100%;
+  }
+  .form-contact {
+    width: 100%;
+    margin-left: 3.125rem;
+    margin-right: 3.125rem;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

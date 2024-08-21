@@ -1,0 +1,46 @@
+footer{
+    @include flex(column, center, center);
+    background-color: $footerBackgroundColor;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    margin-top: 3.125rem;
+    section{
+        @include flex(row, space-around, center);
+        color: $lightTextColor;
+        width: 100%;
+        article{
+            @include flex(column, center, center);
+            gap: .625rem;
+            width: 200px;
+            div{
+                @include flex(row, center, center);
+            }
+            aside{
+                img{
+                    @include imageSize(2rem, 2rem);
+                }
+            }
+        }
+        a{
+            color: $lightTextColor;
+            text-decoration: none;
+        }
+    }
+}
+
+.icon{
+    @include imageSize(1.25rem, 1.25rem);
+}
+
+.phone-icon{
+    @extend .icon;
+}
+
+.email-icon{
+    @extend .icon;
+    width: 1.75rem;
+}
+
+.icon-right-margin{
+    margin-right: .625rem;
+}

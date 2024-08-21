@@ -1,0 +1,8 @@
+.button-style{
+    background-color: $backgroundButton;
+    color: $lightTextColor;
+    border-radius: 50rem;
+    line-height: 1.5;
+    border-style: none;
+    @include imageSize(1.75rem, 7.5rem);
+}

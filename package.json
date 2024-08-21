@@ -1,0 +1,11 @@
+{
+  "name": "preentrega2velazquez",
+  "version": "1.0.0",
+  "description": "\"# vdarturo-PreEntrega2Velazquez\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
