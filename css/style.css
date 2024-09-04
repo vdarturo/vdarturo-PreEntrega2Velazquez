@@ -8,7 +8,7 @@
 form {
   border-radius: 10px;
   box-shadow: 0px 2px 5px #858585;
-  background-color: rgba(20, 154, 236, 0.9176470588);
+  background-color: #f4e5c8;
   padding: 1.25rem;
   width: 25rem;
 }
@@ -40,7 +40,7 @@ form input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #202942;
+  background-color: #461067;
   color: #FFFFFF;
   height: 6.25rem;
   padding: 1px;
@@ -78,7 +78,7 @@ form input {
 }
 
 .button-style {
-  background-color: #0CD2FE;
+  background-color: #f4b04b;
   color: #FFFFFF;
   border-radius: 50rem;
   line-height: 1.5;
@@ -88,7 +88,7 @@ form input {
 }
 
 header {
-  background-color: #FFFFFF;
+  background-color: #5c59b4;
   box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
 }
 header nav a img {
@@ -96,13 +96,16 @@ header nav a img {
   width: 12.5rem;
 }
 header nav ul li {
-  color: #000000;
   font-size: 1.375rem;
   font-family: "Heebo", sans-serif;
 }
 
 a:hover {
-  background-color: orange;
+  background-color: #f4b04b;
+}
+
+.nav-link {
+  color: #FFFFFF;
 }
 
 main {
@@ -141,101 +144,113 @@ main section article ul li img {
   width: 1rem;
 }
 
-.focus-in-expand-fwd {
-  -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: focus-in-expand-fwd 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+.hero-img {
+  height: 37.5rem;
+  width: 37.5rem;
 }
 
-@-webkit-keyframes focus-in-expand-fwd {
-  0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-800px);
-    transform: translateZ(-800px);
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    opacity: 1;
-  }
+.category-icon {
+  height: 9.375rem;
+  width: 9.375rem;
 }
-@keyframes focus-in-expand-fwd {
-  0% {
-    letter-spacing: -0.5em;
-    -webkit-transform: translateZ(-800px);
-    transform: translateZ(-800px);
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    opacity: 1;
-  }
+
+/*.focus-in-expand-fwd {
+	-webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+ @-webkit-keyframes focus-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-800px);
+              transform: translateZ(-800px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-800px);
+              transform: translateZ(-800px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+
 .slide-right {
-  -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	-webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @-webkit-keyframes slide-right {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
   }
-  100% {
-    -webkit-transform: translateX(100px);
-    transform: translateX(100px);
+  @keyframes slide-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(100px);
+              transform: translateX(100px);
+    }
   }
-}
-@keyframes slide-right {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(100px);
-    transform: translateX(100px);
-  }
-}
+
 .slide-left {
-  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+	-webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @-webkit-keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
   }
-  100% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
-}
-@keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
-}
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+  }*/
 footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #202942;
+  background-color: #461067;
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;
   margin-top: 3.125rem;
@@ -287,6 +302,10 @@ footer section a {
 @media screen and (max-width: 48rem) {
   .price-card {
     width: 13.75rem;
+  }
+  .hero-img {
+    height: 25rem;
+    width: 25rem;
   }
 }
 @media screen and (max-width: 24.375rem) {

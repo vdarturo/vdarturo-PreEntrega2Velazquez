@@ -2,4 +2,7 @@
     .price-card{
         width: 13.75rem;
     }
+    .hero-img{
+        @include imageSize(25rem, 25rem);
+    }
 }

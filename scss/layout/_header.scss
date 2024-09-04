@@ -1,5 +1,5 @@
 header{
-    background-color: $lightBackgroundColor;
+    background-color: $darkBackgroundColor;
     box-shadow: 7px 7px 12px 0 rgba(20, 20, 20, 0.3);
     nav{
         a{
@@ -9,7 +9,6 @@ header{
         }
         ul{
             li{
-                color: $darkTextColor;
                 font-size: 1.375rem;
                 font-family: "Heebo", sans-serif;
             }
@@ -19,4 +18,8 @@ header{
 
 a:hover{
     background-color: $linkHoverColor;
+}
+
+.nav-link{
+    color: $lightTextColor;
 }
